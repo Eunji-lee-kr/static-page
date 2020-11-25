@@ -32,8 +32,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/main.css">
-
-
+	<link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
 </head>
 <body>
 <div class="body__container">
@@ -42,19 +41,20 @@
 	<header class="section">
 		<div class="inner clearfix">
 			<div class="menu-group float--left">
-				<div class="logo"><a href="#">GitHub</a></div>
-				<ul class="main-menu">
+				<div class="logo">
+					<a href="#">GitHub</a>
+				</div>
+				<ul class="main-menu toggle">
 					<li><a href="#">Personal</a></li>
 					<li><a href="#">Open source</a></li>
 					<li><a href="#">Business</a></li>
 					<li><a href="#">Explore</a></li>
 				</ul>
 			</div>
-			<div class="sign-group float--right">
+			<div class="sign-group float--right toggle">
 				<div class="btn-group">
 					<a href="#" class="btn sign-in">Sign in</a>
 					<a href="#" class="btn btn--primary sign-up">Sign up</a>
-
 				</div>
 				<form id="search-form" method="post" action="">
 					<input type="text" id="search" class="input--text" placeholder="Search GitHub">
@@ -66,9 +66,7 @@
 					<li><a href="#">Support</a></li>
 				</ul>
 			</div>
-
-
-
+			<div id="toggle-btn">Header Menu Toggle Button</div>
 		</div>
 	</header>
 
@@ -77,23 +75,23 @@
 		<div class="inner">
 			<div class="summary">
 				<h2 class="summary__title">
-					How&nbsp;people build&nbsp;software
+					Built for developers
 				</h2>
 				<p class="summary__description">
-					Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
+					GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 50 million developers.
 				</p>
 			</div>
 			<form id="sign-form" method="post" action="">
 				<ul>
-					<li><input type="text" class="input--text" placeholder="Pick a username"></li>
-					<li><input type="email" class="input--text" placeholder="Your email address"></li>
+					<li><input type="text" class="input--text" placeholder="Username"></li>
+					<li><input type="email" class="input--text" placeholder="Email"></li>
 					<li>
-						<input type="password" class="input--text" placeholder="Create a password">
-						<p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+						<input type="password" class="input--text" placeholder="Password">
+						<p class="caption">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
 					</li>
 					<li>
 						<button type="submit" class="btn btn--primary">Sign up for GitHub</button>
-						<p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+						<p class="caption">By clicking “Sign up for GitHub”, you agree to our Terms of Service and Privacy Statement. We’ll occasionally send you account related emails.</p>
 					</li>
 				</ul>
 			</form>
@@ -116,23 +114,23 @@
 				<ul class="clearfix">
 					<li>
 						<img src="./img/feature-tile__build.png" alt="icon build">
-						<h3>For everything you build</h3>
-						<p>Host and manage your code on GitHub. You can keep your work private or share it with the world.</p>
+						<h3>Write better code</h3>
+						<p>On GitHub, lightweight code review tools are built into every pull request. Your team can create review processes that improve the quality of your code and fit neatly into your workflow.</p>
 					</li>
 					<li>
 						<img src="./img/feature-tile__work.png" alt="icon work">
-						<h3>A better way to work</h3>
-						<p>From hobbyists to professionals, GitHub helps developers simplify the way they build software.</p>
+						<h3>Project management, made&nbsp;simple</h3>
+						<p>On GitHub, project managers and developers coordinate, track, and update their work in one place, so projects stay transparent and on schedule.</p>
 					</li>
 					<li>
 						<img src="./img/feature-tile__projects.png" alt="icon projects">
-						<h3>Millions of projects</h3>
-						<p>GitHub is home to millions of open source projects. Try one out or get inspired to create your own.</p>
+						<h3>Built to grow</h3>
+						<p>Between applications and custom tools, there’s no limit to the ways you can build on GitHub.</p>
 					</li>
 					<li>
 						<img src="./img/feature-tile__platform.png" alt="icon platform">
-						<h3>One platform, from start to finish</h3>
-						<p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
+						<h3>Built in secret store</h3>
+						<p>Automate your software development practices with workflow files embracing the Git flow by codifying it in your repository.</p>
 					</li>
 				</ul>
 			</div>
@@ -144,7 +142,7 @@
 		<div class="inner">
 			<div class="summary">
 				<h2 class="summary__title">Where is GitHub?</h2>
-				<p class="summary__description">GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.</p>
+				<p class="summary__description">GitHub is where people build software. More than 40 million people use GitHub to discover, fork, and contribute to over 100 million projects.</p>
 				<div id="map"></div>
 			</div>
 		</div>
@@ -158,7 +156,7 @@
 					<a href="#" class="btn btn--primary">Sign up for GitHub</a>
 				</div>
 				<div class="cell cell2">
-					Public projects are always free. Work together across unlimited private repositories for $7 / month.
+					Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.
 				</div>
 			</div>
 		</div>
@@ -176,7 +174,7 @@
 				<li><a href="#">About</a></li>
 			</ul>
 			<ul class="site-links float--left">
-				<li>© 2016 GitHub, Inc.</li>
+				<li>© 2020 GitHub, Inc.</li>
 				<li><a href="#">Terms</a></li>
 				<li><a href="#">Privacy</a></li>
 				<li><a href="#">Security</a></li>
@@ -198,5 +196,6 @@
 		</div>
 	</footer>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
